@@ -1,4 +1,5 @@
 {
+  "homepage": "https://<HumbleSmarts>.github.io/<Reacts-Calculator>",
   "name": "react-cal",
   "version": "1.0.0",
   "private": true,
@@ -12,6 +13,8 @@
     "web-vitals": "^3.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,5 +45,8 @@
     "calculator"
   ],
   "author": "HumbleSmarts",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
